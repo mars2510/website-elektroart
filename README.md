@@ -1,5 +1,6 @@
 # ElektroArt – Technology Portal Website
 [![License: All Rights Reserved](https://img.shields.io/badge/License-All%20Rights%20Reserved-red.svg)](LICENSE)
+
 A static website serving as a technology information portal, featuring electronic products (laptops, smartphones, tablets), tutorials, and tech news.
 
 **IMPORTANT – CODE & CONTENT PROTECTION NOTICE**

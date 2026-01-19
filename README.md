@@ -17,7 +17,10 @@ A static website serving as a technology information portal, featuring electroni
 This was a university assignment project focused on front-end web development and UI/UX principles.
 
 ## Live Demo
-[Link to GitHub Pages if deployed]
+[[Link to GitHub Pages if deployed]](https://mars2510.github.io/website-elektroart/)
+
+<img width="1899" height="913" alt="c_script" src="https://github.com/user-attachments/assets/f6ebab67-fad0-409a-a2f3-4d8ab8f8cf94" />
+<img width="1903" height="906" alt="c_hasil_exse" src="https://github.com/user-attachments/assets/a45be19e-faa8-4655-abae-20e4897c0a06" />
 
 ## Note
 Initial layout ideas assisted by AI; all code written, styled, and refined manually.

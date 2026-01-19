@@ -1,4 +1,5 @@
 # ElektroArt – Technology Portal Website
+[![License: All Rights Reserved](https://img.shields.io/badge/License-All%20Rights%20Reserved-red.svg)](LICENSE)
 A static website serving as a technology information portal, featuring electronic products (laptops, smartphones, tablets), tutorials, and tech news.
 
 **IMPORTANT – CODE & CONTENT PROTECTION NOTICE**
@@ -15,7 +16,6 @@ For permission, collaboration inquiries, or to discuss this project:
 🔗 LinkedIn: https://www.linkedin.com/in/teddy-sunanto/
 
 © 2026 Teddy Sunanto – All Rights Reserved.
-[![License: All Rights Reserved](https://img.shields.io/badge/License-All%20Rights%20Reserved-red.svg)](LICENSE)
 
 ## Features
 - Responsive design with clean and visually appealing layout.

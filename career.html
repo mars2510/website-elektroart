@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peluang Karier - ElektroShop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header sama seperti index.html -->
+         <header>
+        <div class="logo">
+            <h1>ElektroArt</h1>
+            <p>Latest gadget news just for you!</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)"><i class="fas fa-list"></i> Kategori <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="maintenance.html">Laptop</a>
+                        <a href="maintenance.html">Handphone</a>
+                        <a href="maintenance.html">Tablet</a>
+                    </div>
+                </li>
+                <li><a href="news.html"><i class="fas fa-newspaper"></i> News</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="career.html"><i class="fas fa-briefcase"></i> Karier</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main class="career-page">
+        <h1>Peluang Karier</h1>
+        
+        <section class="job-openings">
+            <h2>Posisi yang Tersedia</h2>
+            
+            <div class="job-card">
+                <h3>Sales Elektronik</h3>
+                <p><strong>Lokasi:</strong> Jakarta</p>
+                <p><strong>Kualifikasi:</strong> Pengalaman di retail elektronik minimal 1 tahun</p>
+                <button class="apply-btn" onclick="location.href='maintenance.html'">Lamar Posisi Ini</button>
+            </div>
+            
+            <div class="job-card">
+                <h3>Teknisi Elektronik</h3>
+                <p><strong>Lokasi:</strong> Bandung</p>
+                <p><strong>Kualifikasi:</strong> Memahami perbaikan gadget dan laptop</p>
+                <button class="apply-btn" onclick="location.href='maintenance.html'">Lamar Posisi Ini</button>
+            </div>
+        </section>
+        
+        <section class="application-form">
+            <h2>Formulir Lamaran</h2>
+            <form>
+                <label for="fullname">Nama Lengkap</label>
+                <input id="fullname" name="fullname" type="text" placeholder="Nama Lengkap" required>
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Email" required>
+
+                <label for="phone">Nomor Telepon</label>
+                <input id="phone" name="phone" type="tel" placeholder="Nomor Telepon">
+
+                <label for="position">Pilih Posisi</label>
+                <select id="position" name="position" required>
+                    <option value="">Pilih Posisi</option>
+                    <option value="sales">Sales Elektronik</option>
+                    <option value="technician">Teknisi Elektronik</option>
+                </select>
+
+                <label for="cover">Tentang Diri</label>
+                <textarea id="cover" name="cover" placeholder="Ceritakan tentang diri Anda..."></textarea>
+
+                <label for="resume">CV (PDF/DOC)</label>
+                <input id="resume" name="resume" type="file" accept=".pdf,.doc,.docx">
+
+                <button type="submit">Kirim Lamaran</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer sama seperti index.html -->
+     <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>ElektroArt is a website that provides more information about your gadgets. Whatever your problem and specifications, we are the solution.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> info@elektroart.com</p>
+                <p><i class="fas fa-phone"></i> +62 896 6445 0845</p>
+            </div>
+            <div class="footer-section">
+                <h3>Social Media</h3>
+                <a href="https://web.facebook.com/" title="Facebook — ElektroArt"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" title="Instagram — ElektroArt"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/home" title="X (Twitter) — ElektroArt"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ElektroArt. Dibuat oleh <a href="about.html" class="author-link"> Teddy Sunanto </a><br> Tugas Website Pemrograman WEB 1.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

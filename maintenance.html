@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Situs Sedang Maintenance</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    article {
+      background-color: #f2f2f2;
+      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    .article h1 {
+      font-size: 3em;
+      color: #ff5722;
+    }
+    .article p {
+      font-size: 1.2em;
+      max-width: 600px;
+    }
+    .loader {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #ff5722;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+      margin: 30px 0;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .article h2 {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+     <!-- Header sama seperti index.html -->
+         <header>
+        <div class="logo">
+            <h1>ElektroArt</h1>
+            <p>Latest gadget news just for you!</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)"><i class="fas fa-list"></i> Kategori <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Laptop</a>
+                        <a href="#">Handphone</a>
+                        <a href="#">Tablet</a>
+                    </div>
+                </li>
+                <li><a href="news.html"><i class="fas fa-newspaper"></i> News</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="career.html"><i class="fas fa-briefcase"></i> Karier</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <article>
+  <h1>⚙️ Maintenance</h1>
+  <div class="loader"></div>
+  <p>Situs kami sedang dalam proses perawatan untuk peningkatan layanan. Mohon maaf atas ketidaknyamanannya. Kami akan segera kembali online!</p>
+  <h2>&copy; 2025 YourWebsiteName. All rights reserved.</h2>
+    </article>
+
+    <!-- Footer sama seperti index.html -->
+     <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>ElektroArt is a website that provides more information about your gadgets. Whatever your problem and specifications, we are the solution.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> info@elektroart.com</p>
+                <p><i class="fas fa-phone"></i> +62 896 6445 0845</p>
+            </div>
+            <div class="footer-section">
+                <h3>Social Media</h3>
+                <a href="https://web.facebook.com/" title="Facebook — ElektroArt"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" title="Instagram — ElektroArt"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/home" title="X (Twitter) — ElektroArt"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ElektroArt. Dibuat oleh <a href="about.html" class="author-link"> Teddy Sunanto </a><br> Tugas Website Pemrograman WEB 1.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

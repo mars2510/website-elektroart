@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tutorial Membuat Domain dan Hosting dengan GitHub Pages</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    article {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      line-height: 1.8;
+    }
+
+    .article h1, h2 {
+      color: #2c3e50;
+    }
+
+     img {
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+    pre {
+      background: #eee;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    code {
+      font-family: monospace;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    .source {
+      font-size: 0.9em;
+      color: #888;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+    <!-- Header sama seperti index.html -->
+         <header>
+        <div class="logo">
+            <h1>ElektroArt</h1>
+            <p>Latest gadget news just for you!</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)"><i class="fas fa-list"></i> Kategori <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="maintenance.html">Laptop</a>
+                        <a href="maintenance.html">Handphone</a>
+                        <a href="maintenance.html">Tablet</a>
+                    </div>
+                </li>
+                <li><a href="news.html"><i class="fas fa-newspaper"></i> News</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="career.html"><i class="fas fa-briefcase"></i> Karier</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+<article>
+  <h1>Tutorial Membuat Domain dan Hosting dengan GitHub Pages</h1>
+  <img src="assets/images/github.png" alt="GitHub">
+  <p>
+    GitHub Pages adalah layanan gratis dari GitHub yang memungkinkan kamu untuk membuat dan meng-hosting website statis (HTML, CSS, JS) secara online, tanpa perlu bayar server. Cocok banget buat portofolio, blog, dokumentasi, atau project pribadi.
+  </p>
+
+  <h2>🛠️ Apa yang Kamu Butuhkan</h2>
+  <ul>
+    <li>Akun GitHub (buat gratis di <a href="https://github.com" target="_blank" rel="noopener">github.com</a>)</li>
+    <li>Basic HTML/CSS (boleh dari template atau buatan sendiri)</li>
+    <li>Browser dan koneksi internet</li>
+  </ul>
+
+  <h2>📦 Langkah 1: Buat Repository Baru</h2>
+  <ol>
+    <li>Login ke akun GitHub kamu.</li>
+    <li>Klik tombol <strong>New</strong> di halaman repositori.</li>
+    <li>Nama repository: <code>username.github.io</code> (ganti <i>username</i> dengan username GitHub kamu).</li>
+    <li>Pilih "Public", lalu klik <strong>Create Repository</strong>.</li>
+  </ol>
+
+  <h2>🧾 Langkah 2: Upload File Website</h2>
+  <p>
+    Kamu bisa upload file HTML, CSS, JS langsung dari:
+  </p>
+  <ul>
+    <li><strong>Via Web:</strong> klik "Add file" → "Upload files". Pilih file website kamu (contoh: <code>index.html</code>), lalu klik "Commit changes".</li>
+    <li><strong>Via Git:</strong> Kalau kamu pakai Git, jalankan:
+    </li>
+  </ul>
+
+  <pre><code>git clone https://github.com/username/username.github.io
+cd username.github.io
+# copy file HTML/CSS/JS ke folder ini
+git add .
+git commit -m "Upload website"
+git push origin main</code></pre>
+
+  <h2>🌐 Langkah 3: Aktifkan GitHub Pages</h2>
+  <ol>
+    <li>Buka halaman repository kamu.</li>
+    <li>Masuk ke <strong>Settings</strong> → <strong>Pages</strong> (scroll ke bawah).</li>
+    <li>Pilih sumber: <strong>Deploy from branch</strong> → <strong>Main</strong> → folder root (/) lalu klik Save.</li>
+    <li>Tunggu beberapa detik, nanti akan muncul link GitHub Pages kamu, misalnya: <br>
+      <code>https://username.github.io</code>
+    </li>
+  </ol>
+
+  <h2>🔗 Langkah 4: Hubungkan ke Domain Sendiri (Opsional)</h2>
+  <p>
+    Kalau kamu punya domain sendiri (misal dari Niagahoster, Namecheap, dsb), kamu bisa menghubungkannya ke GitHub Pages:
+  </p>
+  <ol>
+    <li>Tambahkan file bernama <code>CNAME</code> di root folder dan isi dengan domain kamu (contoh: <code>www.elektroart.com</code>).</li>
+    <li>Masuk ke pengaturan DNS domain kamu dan tambahkan DNS Record:
+      <ul>
+        <li><strong>Type:</strong> A</li>
+        <li><strong>Name:</strong> @</li>
+        <li><strong>Value:</strong> 
+          <ul>
+            <li>185.199.108.153</li>
+            <li>185.199.109.153</li>
+            <li>185.199.110.153</li>
+            <li>185.199.111.153</li>
+          </ul>
+        </li>
+        <li>Tambahkan juga CNAME record:
+          <ul>
+            <li><strong>Name:</strong> www</li>
+            <li><strong>Value:</strong> username.github.io</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ol>
+
+  <p>Setelah semua langkah di atas, biasanya dalam 5–30 menit domain akan aktif. Gunakan <a href="https://dnschecker.org" target="_blank" rel="noopener">DNS Checker</a> untuk cek status DNS kamu.</p>
+
+  <h2>📌 Tips Tambahan</h2>
+  <ul>
+    <li>File utama website kamu harus bernama <code>index.html</code></li>
+    <li>GitHub Pages hanya untuk file statis (tidak mendukung PHP, MySQL, dsb)</li>
+    <li>Kamu bisa pakai Jekyll atau generator lain untuk bikin blog statis</li>
+    <li>Website kamu bisa diakses di semua perangkat dan gratis selamanya</li>
+  </ul>
+
+  <h2>✅ Kesimpulan</h2>
+  <p>
+    GitHub Pages adalah cara paling praktis dan gratis untuk mempublikasikan website. Dengan hanya bermodalkan akun GitHub dan file HTML/CSS, kamu sudah bisa punya domain online sendiri. Cocok banget buat portofolio, CV digital, proyek pribadi, dan website komunitas.
+  </p>
+
+  <div class="source">
+    Ditulis oleh ElektroArt Team | Juni 2025
+  </div>
+</article>
+<!-- Footer sama seperti index.html -->
+     <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>ElektroArt is a website that provides more information about your gadgets. Whatever your problem and specifications, we are the solution.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> info@elektroart.com</p>
+                <p><i class="fas fa-phone"></i> +62 896 6445 0845</p>
+            </div>
+            <div class="footer-section">
+                <h3>Social Media</h3>
+                <a href="https://web.facebook.com/" title="Facebook — ElektroArt"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" title="Instagram — ElektroArt"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/home" title="X (Twitter) — ElektroArt"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ElektroArt. Dibuat oleh <a href="about.html" class="author-link"> Teddy Sunanto </a><br> Tugas Website Pemrograman WEB 1.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
